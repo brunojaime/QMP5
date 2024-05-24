@@ -10,13 +10,18 @@ public class GestorGuardarropas {
   List<Guardarropas> listadoGuardarropas;
   List<propuestaAgregarPrenda> listPropuestasAgregarPrenda;
   List<propuestaQuitarPrenda> listPropuestasQuitarPrenda;
-  
+  List<propuestaPendiente> propuestasPendientes;
   String criterio;
 
   public void agregarGuardarropa(Guardarropas guardarropas){
       listadoGuardarropas.add(guardarropas);
   }
 
+
+
+  public void agregarPropuestaPendiente(propuestaPendiente propuestaPendiente){
+    this.propuestasPendientes.add(propuestaPendiente);
+  }
   public void agregarPropuestaAgregarPrenda(propuestaAgregarPrenda propuestaAgregarPrenda){
     this.listPropuestasAgregarPrenda.add(propuestaAgregarPrenda);
   }
